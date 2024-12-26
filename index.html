@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Reminder System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Task Reminder System</h1>
+    
+    <!-- Task Input Form -->
+    <div class="task-container">
+        <input type="text" id="taskTitle" class="input-field" placeholder="Task Title">
+        <input type="number" id="taskDueTime" class="input-field" placeholder="Due Time (minutes)">
+        <select id="taskPriority" class="input-field">
+            <option value="high">High Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="low">Low Priority</option>
+        </select>
+        <button onclick="addTaskHandler()" class="btn">Add Task</button>
+    </div>
+    <!-- Task and Reminder Buttons
+    <div class="action-buttons">
+        <button onclick="triggerManualReminders()" class="btn">Trigger Reminders Now</button>
+    </div>
+-->
+
+    <!-- Reminder Section -->
+    <div class="reminder-section">
+        <h2>Reminders</h2>
+        <ul id="reminderList" class="reminder-list"></ul>
+    </div>
+
+    <!-- Task List Section -->
+    <div class="task-list">
+        <h2>Task List</h2>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</html>
